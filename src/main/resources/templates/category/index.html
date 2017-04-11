@@ -7,11 +7,16 @@
 
 <nav th:replace="fragments :: navigation"></nav>
 
+<br />
+
 <div>
 <ul th:each="category : ${categories}">
-    <li th:text="category.name"></li>
+    <li th:text="${category.name}"></li>
 </ul>
-    <a href="/category/add">Add Category</a>
 </div>
+
+<br />
+
+<a href="/category/add">Add Category</a>
 </body>
 </html>
